@@ -1,3 +1,7 @@
 <h2><%= @task.title %></h2>
 <p><%= @task.description %></p>
+<p>Task created at <%= @task.created_at %></p>
+<p>Task last modified <%= @task.updated_at %></p>
 <p>Done: <%= @task.done %></p>
+
+<%= link_to "Go Home", tasks_path %>
